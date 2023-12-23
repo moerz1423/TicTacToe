@@ -57,7 +57,7 @@ jobs:
         with:
           name: app
           # path: target/
-          path: workflows/target/
+          path: target/
 
       - name: Deploy to GitHub Releases
         id: deploy

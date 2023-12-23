@@ -28,18 +28,24 @@
        - name: Run tests
          run: mvn test --file pom.xml
 
-   deploy:
-     runs-on: ubuntu-latest
-     needs: build
-     steps:
        - name: Upload JAR artifact
          uses: actions/upload-artifact@v2
          with:
            name: app
-           # path: target/TicTacToe.jar
-           # path: target/TicTacToe-1.0-SNAPSHOT.jar
            path: target/TicTacToe-1.0-SNAPSHOT.jar
-           if-no-files-found: error
+
+   deploy:
+     runs-on: ubuntu-latest
+     needs: build
+     steps:
+       # - name: Upload JAR artifact
+       #   uses: actions/upload-artifact@v2
+       #   with:
+       #     name: app
+       #     # path: target/TicTacToe.jar
+       #     # path: target/TicTacToe-1.0-SNAPSHOT.jar
+       #     path: target/TicTacToe-1.0-SNAPSHOT.jar
+       #     if-no-files-found: error
 
        - name: Set up JDK 17 for deployment
          uses: actions/setup-java@v2

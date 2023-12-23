@@ -37,7 +37,7 @@ jobs:
         with:
           name: app
           # path: target/TicTacToe.jar
-          path: .github/workflows/target/TicTacToe.jar
+          path: workflows/target/TicTacToe.jar
           if-no-files-found: error
 
       - name: Set up JDK 17 for deployment
@@ -51,7 +51,7 @@ jobs:
         with:
           name: app
           # path: target/
-          path: .github/workflows/target/
+          path: workflows/target/
 
       - name: Deploy to GitHub Releases
         id: deploy

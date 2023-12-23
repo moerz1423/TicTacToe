@@ -54,8 +54,6 @@
        - name: Deploy to GitHub Releases
          id: deploy
          uses: softprops/action-gh-release@v1
-         permissions:
-           contents: write
          with:
            tag_name: ${{ github.sha }}
            files: target/TicTacToe-1.0-SNAPSHOT.jar

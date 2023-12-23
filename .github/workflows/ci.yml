@@ -37,7 +37,7 @@ jobs:
         with:
           name: app
           # path: target/TicTacToe.jar
-          path: /target/TicTacToe.jar
+          path: ./target/TicTacToe.jar
           if-no-files-found: error
 
       - name: Set up JDK 17 for deployment

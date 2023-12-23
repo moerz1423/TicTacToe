@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: app
-          path: target/
+          path: target/TicTacToe.jar
 
       - name: Set up JDK 17 for deployment
         uses: actions/setup-java@v2

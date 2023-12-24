@@ -10,7 +10,7 @@ public class TicTacToe {
         boolean gameWon = false;
 
         do {
-            board.print();
+            //board.print();
             System.out.println("Player " + currentPlayer.getMarker() + "'s turn.");
             int x = -1, y = -1;
 

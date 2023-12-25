@@ -4,7 +4,7 @@ package at.fhtw;
 // It has methods to clear the board, place a marker at a given position, check if the board is full, and print the board.
 
 class Board {
-    char[][] cells;
+    private char[][] cells;
 
     public Board() {
         cells = new char[3][3];
